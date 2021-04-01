@@ -5,5 +5,5 @@ import by.anton.arrayapi.exception.ApiException;
 
 public interface ArrayCalculateInterface {
     int sumElementsOfArray(CustomArray customArray)throws ApiException;
-    int averageOfArray(CustomArray customArray)throws ApiException;
+    double averageOfArray(CustomArray customArray)throws ApiException;
 }

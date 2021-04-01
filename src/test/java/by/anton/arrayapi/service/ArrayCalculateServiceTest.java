@@ -21,8 +21,8 @@ public class ArrayCalculateServiceTest {
     @Test
     public void averageOfArrayTest() throws ApiException {
         CustomArray customArray = new CustomArray(new int[]{1, 4, 5, 6});
-        int actualAverage = arrayCalculateService.averageOfArray(customArray);
-        int expected = 4;
+        double actualAverage = arrayCalculateService.averageOfArray(customArray);
+        double expected = 4.0;
         assertEquals(actualAverage, expected);
     }
 

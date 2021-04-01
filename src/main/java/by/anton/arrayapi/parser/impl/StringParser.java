@@ -13,8 +13,9 @@ public class StringParser implements StringParserInterface {
     public int[] parseString(ArrayList<String> arrayList) {
         logger.info("Method parseString called");
         int[] arrayInt = null;
+        StringValidate stringValidate = new StringValidate();
         for (String string : arrayList) {
-            if (new StringValidate().isValid(string)) {
+            if (stringValidate.isValid(string)) {
                 String[] elements = string.split(", ");
                 arrayInt = new int[elements.length];
                 for (int i = 0; i < elements.length; i++) {

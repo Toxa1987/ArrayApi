@@ -6,5 +6,5 @@ import java.io.File;
 import java.util.ArrayList;
 
 public interface DataReaderInterface {
-    public ArrayList<String> readFile(File file) throws ApiException;
+    public ArrayList<String> readFile(String path) throws ApiException;
 }

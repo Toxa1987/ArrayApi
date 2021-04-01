@@ -8,13 +8,19 @@ public class StringValidate {
 
     public boolean isValid(String str) {
         logger.info("Method validate of string called");
-        String[] elements = str.split(", ");
-        boolean isVal = true;
+        if (str.length() == 0) {
+            return false;
+        }
+        boolean isVal = false;
+        if(str.matches("(-?\\d+[,]?\\s?)*")){
+        String[] elements = str.split(",\\s");
+        isVal=true;
         for (String element : elements) {
             if (!element.matches("-?\\d+")) {
                 isVal = false;
                 break;
             }
+        }
         }
         return isVal;
     }
